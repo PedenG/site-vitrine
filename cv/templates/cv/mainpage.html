@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="{% static 'css/cv.css' %}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+    <title>{{ titre }}</title>
+<body id="container">
+    <div class="page-header">
+        <img src="{% static 'img/burger 64px.png' %}" href="#" id="burger">
+        <h1 class="title" title="Mon CV">{{ titre }}</h1>
+    </div>
+
+    <aside id="sidebar">
+    <!--Navbar-->
+    <nav class="">
+        <!-- Collapsible content -->
+        <div class="" id="">
+
+            <!-- Links -->
+            <ul class="">
+                <a class="lien" href="{% url 'mainpage' %}">
+                    <li class="nav-item">
+                        <h4 class="menu-item">Accueil</h4>
+                    </li>
+                </a>
+                <hr class="line">
+                <a class="lien" href="{% url 'blog' %}">
+                    <li class="nav-item">
+                        <h4 class="menu-item">Blog</h4>
+                    </li>
+                </a>
+                <hr class="line">
+                <a class="lien" href="{% url 'cv' %}">
+                    <li class="nav-item">
+                        <h4 class="menu-item" >CV</h4>
+                    </li>
+                </a>
+                <hr class="line">
+                <a class="lien" href="{% url 'contact' %}">
+                    <li class="nav-item">
+                        <h4 class="menu-item" >Contact</h4>
+                    </li>
+                </a>
+                <hr class="line">
+            </ul>
+            <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+    </aside>
+{% block content %}
+{% endblock %}
+</body>
+</html>
