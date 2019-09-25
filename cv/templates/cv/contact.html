@@ -1,36 +1,74 @@
-{% extends 'cv/mainpage.html' %}
-
-
+{% extends 'cv/index.html' %}
 {% block content %}
-<form method="POST">
-    <fieldset style="text-align: center;">
-        <div class="form-group">
-            <label class="" for="nom">Nom <span class="required">*</span></label>
-            <input id="nom" type="text" placeholder="Nom..." required="required">
-        </div>
-        <div class="form-group">
-            <label for="prenom">Prénom <span class="required">*</span></label>
-            <input id="prenom" type="text" placeholder="Prénom..." required="required">
-        </div>
-        <div class="form-group">
-            <label for="mail">Email <span class="required">*</span></label>
-            <input id="mail" type="email" placeholder="Email..." required="required">
-        </div>
-        <div class="form-group">
-            <label for="tel">Numéro de téléphone : </label>
-            <input id="tel" type="tel" placeholder="Numéro de téléphone...">
-        </div>
-        <div class="form-group">
-            <label for="message">Votre message : </label>
-            <textarea id="message" placeholder="Votre message..."></textarea>
-        </div>
-        <div class="form-group">
-            <button class="btn btn-danger" type="cancel">Annuler </button>
-            <button class="btn btn-success" type="submit">Envoyer</button>
-        </div>
-    </fieldset>
-</form>
 
+	<header id="head" class="secondary"></header>
 
+	<!-- container -->
+	<div class="container">
 
+		<ol class="breadcrumb">
+			<li><a href="index.html">Accueil</a></li>
+			<li class="active">A propos</li>
+		</ol>
+
+		<div class="row">
+
+			<!-- Article main content -->
+			<article class="col-sm-9 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Contactez moi</h1>
+				</header>
+
+				<p>
+					Une question à me poser ? Besoin d'une information complémentaire ? N'hésitez pas et contactez moi !
+				</p>
+				<br>
+					<form>
+						<div class="row">
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Nom" required>
+							</div>
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Email" required>
+							</div>
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Telephone">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea placeholder="Ecrivez votre message ici..." class="form-control" rows="9"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12 text-right">
+								<input class="btn btn-action" type="submit" value="Envoyer le message">
+							</div>
+						</div>
+					</form>
+
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<aside class="col-sm-3 sidebar sidebar-right">
+
+				<div class="widget">
+					<h4>Email :</h4>
+					<p>
+						<a href="mailto:#">glenpedenn@gmail.com</a><br>
+					</p>
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+
+	<section class="container-full top-space">
+		<div id="map"></div>
+	</section>
 {% endblock %}
