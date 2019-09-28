@@ -125,4 +125,4 @@ EMAIL_HOST = 'localhost'
 EMAIL_PORT = 25
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
-DEFAULT_FROM_EMAIL = 'Server <server@whatever.com>'
+DEFAULT_FROM_EMAIL = 'VPS <glen.peden@glen-peden.fr>'
