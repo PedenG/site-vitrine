@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail, BadHeaderError
+
 from .form import ContactForm
 
 
@@ -36,5 +37,7 @@ def send_email(request):
         form = ContactForm()
 
     return render(request, 'cv/contact.html', {'form': form})
+
+
 
 

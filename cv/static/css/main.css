@@ -81,6 +81,31 @@ img.pull-left { margin-right: 10px; }
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }
 
+.notfound1 {
+    position: relative;
+    height: 100vh;
+}
+
+.notfound1 .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.notfound {
+    max-width: 766px;
+    width: 100%;
+    line-height: 1.4;
+    padding : 0px 15px 0px 15px;
+}
+
+.notfound .notfounderror {
+    position: relative;
+    height: 150px;
+    line-height: 150px;
+    margin-bottom: 25px;
+}
+
 
 /*-------------------
  * Skills Progressbar

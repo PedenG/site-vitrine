@@ -1,0 +1,4 @@
+Sitemap: http://www.glen-peden.fr
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
