@@ -1,4 +1,7 @@
 {% extends 'cv/index.html' %}
+{% block head %}
+<link rel="canonical" href="http://www.glen-peden.fr/contact"/>
+{% endblock %}
 {% block content %}
 
 	<header id="head" class="secondary"></header>
@@ -7,7 +10,7 @@
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html">Accueil</a></li>
+			<li><a href="{% url 'mainpage' %}">Accueil</a></li>
 			<li class="active">A propos</li>
 		</ol>
 

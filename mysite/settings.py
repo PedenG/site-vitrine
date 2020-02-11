@@ -25,7 +25,7 @@ SECRET_KEY = '(59zcy482ue)&f7utv*n7muqm8g#$&5sux^om^*4k_@*i^8qkk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['glen-peden.fr', 'www.glen-peden.fr', '127.0.0.1', '51.68.123.188']
+ALLOWED_HOSTS = ['www.glen-peden.fr', '127.0.0.1', '51.68.123.188']
 
 
 # Application definition
