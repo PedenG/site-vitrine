@@ -2,3 +2,4 @@ Sitemap: https://www.glen-peden.fr/sitemap.xml
 User-agent: *
 Disallow: /admin/
 Disallow: /accounts/
+Disallow: /index.html/
